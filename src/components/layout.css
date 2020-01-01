@@ -7,6 +7,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(
+    black 20%,
+    white 20%
+    );
+    background-repeat: no-repeat;
 }
 article,
 aside,

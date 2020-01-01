@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -7,6 +11,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+    resolve: 'gatsby-source-contentful',
+    options: {
+      spaceId: `fmuoiwhu5mh6`,
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    },
+  },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -15,6 +26,16 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `londrina solid\:100,300,400,900`,
+          `open sans\:300,400, 600, 700, 800`
+        ]
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

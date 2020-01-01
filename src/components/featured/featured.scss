@@ -1,0 +1,60 @@
+.feed--featured {
+    display: block;
+    width: 100%;
+    padding-top: 70px;
+
+    .card {
+      height: 490px;
+      width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px 50px;
+        transition: all .3s ease;
+
+        &__category {
+            font-family: Londrina Solid;
+            font-size: 20px;
+            text-transform: uppercase;
+            line-height: 16px;
+            font-weight: 700;
+            color: #C65252;
+            margin: 0;
+        }
+
+        &__title {
+            font-family: Londrina Solid;
+            width: 74%;
+            font-size: 40px;
+            line-height: 49px;
+            font-weight: 400;
+            color: #fff;
+            margin: 10px 0 0 0;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        &__description {
+          color: white;
+          font-family: Open Sans;
+          font-size: 14px;
+          width: 74%;
+        }
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.02);
+        }
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card:nth-child(n) {
+        grid-column-start: span 12;
+    }
+}

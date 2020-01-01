@@ -1,0 +1,34 @@
+.nav {
+  padding: 20px 0;
+}
+
+.nav__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.nav__item--link {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: Open Sans;
+  font-size: 16px;
+}
+
+.nav__item--link .active {
+color: #C65252;
+}
+
+.nav__item--link:hover {
+  color: #C65252;
+}
+
+.nav__logo {
+  margin: auto 50px;
+  font-family: Open Sans;
+  font-weight: 800;
+  font-size: 3.2rem;
+  text-transform: none;
+}
