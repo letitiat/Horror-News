@@ -13,6 +13,10 @@ body {
     );
     background-repeat: no-repeat;
 }
+
+main {
+padding-top: 50px;  
+}
 article,
 aside,
 details,
