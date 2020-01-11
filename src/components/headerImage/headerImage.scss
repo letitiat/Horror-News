@@ -1,0 +1,54 @@
+
+
+.background-image__hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(black, 0.7);
+  }
+
+  .blog-header__content {
+    z-index: 1;
+    color: white;
+    padding: 80px 0 160px;
+    position: relative;
+
+    h1 {
+      font-family: Londrina Solid;
+      color: #C65252;
+      font-size: 70px;
+      padding: 20px 0;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 22px;
+    }
+
+    h3 {
+      margin-bottom: 0px;
+      font-size: 22px;
+      letter-spacing: 1px;
+      font-family: Londrina Solid;
+    }
+  }
+
+  .nav {
+    z-index: 1;
+    position: relative;
+
+    .nav__item--link {
+      color: white;
+    }
+  }
+}

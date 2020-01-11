@@ -11,6 +11,12 @@
 
       .full-card--img {
         width: 50%;
+        transition: all .3s ease;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.02);
+        }
       }
 
       .full-card--text {

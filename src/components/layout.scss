@@ -3,19 +3,57 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper--component {
+  padding-top: 100px;
+}
+
+
+.wrapper--hero {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0px 1.0875rem 1.45rem;
+}
+
+.wrapper--black{
   background-image: linear-gradient(
-    black 20%,
-    white 20%
+    black 17%,
+    transparent 17%
     );
-    background-repeat: no-repeat;
+
+    .nav {
+        padding: 50px 0;
+
+  .nav__item--link {
+        color: white;
+      }
+
+      .nav__item--link .active {
+      color: #C65252;
+      }
+
+      .nav__item--link:hover {
+        color: #C65252;
+      }
+
+    }
 }
 
 main {
-padding-top: 50px;  
+padding-top: 50px;
+
 }
 article,
 aside,

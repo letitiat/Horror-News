@@ -39,8 +39,10 @@ export default () => (
      render={data => (
         <div className='feed--home'>
             <div key={data.allContentfulBlog.edges[0].node.id} className='full-card'>
-            <img className='full-card--img' src={data.allContentfulBlog.edges[0].node.featuredImage.fluid.src} alt="Picture"/>
+            <img className='full-card--img' src={data.allContentfulBlog.edges[0].node.featuredImage.fluid.src} alt="Picture"
+            onClick={() => navigate(`/blog/${data.allContentfulBlog.edges[0].node.slug}`)}/>
               <div className='full-card--text'>
+        
                 <p className='full-card--text__category'>{data.allContentfulBlog.edges[0].node.categories[0].title}</p>
                 <p className='full-card--text__title'>{data.allContentfulBlog.edges[0].node.title}</p>
                 <p className='full-card--text__description'>{data.allContentfulBlog.edges[0].node.shortDescription}</p>

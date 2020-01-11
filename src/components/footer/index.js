@@ -12,7 +12,7 @@ const Footer = () => (
         to='/blog'>Movies</Link>
         <Link className={window.location.href.indexOf('blog') > 0 || window.location.href.indexOf('category') > 0 ? 'footer__item--link active footer__logo' : 'footer__item--link footer__logo'}
         to='/blog'>spoop</Link>
-           <Link className={window.location.href.indexOf('contact') > 0 ? 'nav__item--link active' : 'nav__item--link'}
+           <Link className={window.location.href.indexOf('contact') > 0 ? 'footer__item--link active' : 'footer__item--link'}
            to='/contact'>Games</Link>
            <Link className={window.location.href.indexOf('blog') > 0 || window.location.href.indexOf('category') > 0 ? 'footer__item--link active' : 'footer__item--link'}
            to='/blog'>Blog</Link>

@@ -36,6 +36,7 @@ export default () => (
  }
 `}
      render={data => (
+       <div className="wrapper--component">
         <div className='feed--featured'>
             {data.allContentfulBlog.edges.map(edge => (
                 <div key={edge.node.id} className='card'
@@ -54,6 +55,7 @@ export default () => (
             <p className='card__description'>{edge.node.shortDescription}</p>
             </div>
           ))}
+        </div>
         </div>
      )}
    />
